@@ -1,0 +1,338 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+  background: #F8F8F8;
+  max-width: 1250px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  color: grey;
+  width: 80%;
+  margin: 1.5em auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+  display: block;
+  background: white;
+  padding: 1em;
+  margin: 5px auto;
+  width: 90%;
+}
+
+.main-header {
+  padding-bottom: 2em;
+}
+
+.profile-image-box {
+  background: #DFDCDC;
+  width: 70%;
+  margin: 2em auto;
+}
+
+.profile-image {
+  width: 200px;
+  margin-top: 1em;
+  margin-bottom: .9em;
+}
+
+.header-p {
+  padding-bottom: 1em;
+}
+
+.portfolio {
+  background: white;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+.portfolio h2 {
+  margin-bottom: 2em;
+}
+
+.portfolio h3 {
+  margin-top: 10px;
+  margin-bottom: -.25em;
+}
+
+.portfolio img {
+  width: 90%;
+}
+
+.portfolio p {
+  max-width: 350px;
+}
+
+.marketing-page,
+.search-page,
+.travel-app,
+.map,
+.photo-gallery,
+.calculator {
+  padding-bottom: 3em;
+}
+
+.skills {
+  background: #F8F8F8;
+  margin: auto;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+.contact {
+  padding-top: 2em;
+  background: white;
+}
+
+.contact p {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.main-footer {
+  border-top: 1px solid darkgray;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.main-footer a {
+  text-decoration: none;
+  color: gray;
+}
+
+.footer-left {
+  float: left;
+  margin: 2em 1em;
+  width: auto;
+}
+
+.footer-right {
+  float: right;
+  margin: 2em 1em;
+}
+
+/*Media Queries*/
+
+/* START: Screens less than 767px*/
+
+@media (max-width:767px) {
+
+  .main-footer-nav {
+    display: none;
+  }
+
+}
+
+/* END: Screen less than 767px*/
+
+/* START: Screens 768px to 1024px*/
+
+@media (min-width:768px) and (max-width:1024px) {
+ 
+  nav li {
+   display: inline-block;
+  }
+
+  nav a {
+   background-color: #F8F8F8;
+  }
+
+  .intro {
+  display: inline-block;
+  width: 90%;
+  }
+
+  .profile-image-box {
+  width: 45%;
+  float: right;
+  } 
+
+  .intro p {
+  width: 50%;
+  float: left;
+  text-align: left;
+  }
+  
+  .marketing-page,
+  .search-page,
+  .travel-app,
+  .map,
+  .photo-gallery,
+  .calculator {
+    float: left;
+    width: 50%;
+    text-align: center;
+    background-color: white;
+  }
+
+  .portfolio img {
+    width: 90%;
+  }
+
+  .footer-left {
+    margin: 0;
+    padding-top: 5px;
+  }
+
+  .footer-right {
+    display: none;
+  }
+
+  .main-footer a {
+    padding-top: 0;
+  }
+
+  .main-footer ul {
+    text-align: right;
+    margin-top: 20px;
+  }
+
+}
+
+/*END: Screens 768px to 1024px*/
+
+/*START: Screen more than 1025px*/
+
+@media (min-width: 1025px) {
+
+  header {
+    display: inline-block;
+    width: 90%;
+  }
+
+  header h1 {
+    width: 50%;
+    float: left;
+    text-align: left;
+  }
+
+  nav {
+    width: 50%;
+    float: right;
+    text-align: right;
+    margin-top: 32px;
+  }
+
+  header li {
+    float: left;
+    margin: 0;
+    width: 25%;
+    text-align: center;
+  }
+
+  header a {
+    padding: 0;
+    margin: 0;  
+    background-color: #F8F8F8;
+  }
+
+  .intro {
+    display: inline-block;
+    width: 90%;
+    }
+
+  .intro p {
+    width: 50%;
+    float: left;
+    text-align: left;
+    }
+  
+  .profile-image-box {
+    width: 45%;
+    float: right;
+    max-width: 430px;
+  } 
+
+  .marketing-page,
+  .search-page,
+  .travel-app,
+  .map,
+  .photo-gallery,
+  .calculator {
+    float: left;
+    width: 33%;
+    
+    text-align: center;
+  }
+
+.main-footer {
+  width: 90%;
+  margin: auto;
+}
+
+.footer-left {
+    float: left;
+    width: 50%;
+    text-align: left;
+  }
+
+.footer-right {
+  display: none;
+}
+
+.main-footer nav {
+  float: right;
+  width: 50%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-footer ul {
+  text-align: right;
+  padding: 0;
+}
+
+.main-footer li {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+.main-footer a {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 0;
+  background-color:#F8F8F8;
+}
+
+.footer-left {
+  margin: 0;
+  padding-top: 15px;
+}
+
+.footer-right {
+  display: none;
+}
+}
+
+/*Clear Fix*/
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
